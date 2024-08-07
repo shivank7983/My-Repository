@@ -4,76 +4,186 @@ This is my first Repository
 Author - Shivank Singh
 "Hello"
 **HTML Code:**
- <header>
-    <div class="header-text">
-        <p>A Webflow membership template for resource websites. <a href="#" class="click">See all templates ></a></p>
+ <div class="menu">
+        <a href="#" class="menu-item">Sell With Us</a>
+        <span class="separator">|</span>
+        <a href="#" class="menu-item">Contact Us</a>
     </div>
-</header>
-    <div class="header-content">
-        <div class="icon">
-            <img src="membership_icon.png" width="70" alt="membership">
-            <span>Memberbase</span>
-        </div>
-        <input type="text" placeholder="Search resources">
-        <nav class="nav-links">
-            <a href="#">All Resources</a>
-            <a href="#">Log In</a>
-            <button>Free Sign Up</button>
-        </nav>
+    <div id="head">
+      <div class="logo">
+        <a href="#"><img src="Shopclues_logo.png" width="130" height="60" alt="Logo"></a>
+      </div>
+      <div class="searchbar">
+        <input type="text" placeholder="What is on your Mind today?">
+        <button class="btn1">Search</button>
+      </div>
+      <div class="Location1">
+        <span>Share</span><a style="display: block" href="#">Location</a>
+      </div>
+      <div class="bell">
+        <a href="#"><img src="Location_icon.png" alt="Location"></a>
+        <a href="#"><img src="Bell_Icon.png" alt="Bell"></a>
+        <a href="#"><img src="Favourties_icon.png" alt="Favourties"></a>
+        <a href="#"><img src="Cart_icon.png" alt="cart"></a>
+        <div>Sign In</div>
+      </div>
     </div>
-</header>
+        <div id="head2">
+          <img src="Blue_Icon.png" alt="Made in India">
+          <div class="nav-list">
+            <ul class="list">
+              <li>Mobile & More</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>Home & Kitchen</li>
+              <li>Appliances</li>
+              <li>Sports & More</li>
+              <li>Essentials</li>
+              <li>Offers</li>
+              <li>Global Shopping</li>
+            </ul>
+          </div>
+    </div>
 
-**CSS Codes**
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0px;
-    margin: 0px;
+    **CSS Code**
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: #686D76;
+#head {
+    height: 90px;
+    display: flex;
+    }
+
+#head2 {
+    height: 50px;
+    background-color: #24A3B5;
 }
 
-a: hover {
-    color: black;
-    font-weight: bolder;
+.logo {
+    padding-top: 22px;
+    padding-left: 40px;
 }
 
-button {
-    padding: 8px 16px;
+.searchbar {
+    margin: 0 20px;
+    padding-top: 35px;
+    padding-left: 80px;
+}
+
+input {
+    width: 400px;
+    padding: 12px 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+    background-color: #e8f3f8;
+}
+
+input[type="text"]::placeholder {
+    font-size: 18px;
+}
+
+input:focus {
+    background-color: white;
+    box-shadow: 0 4px 8px black
+}
+
+.btn1 {
+    padding: 13px 30px;
+    background-color: #FF8E4D;
     border: none;
-    border-radius: 16px;
-    background-color: black;
+    border-radius: 2px;
     color: white;
+    font-weight: bold;
+}
+
+.btn1:hover {
+    background-color: #FF8E4D;
     cursor: pointer;
 }
-
-.nav-links {
+/* 
+p {
     display: inline;
+    padding-left: 20px;
+} */
+
+.Location1 {
+    padding-left: 50px;
+    padding-top: 35px;
 }
 
-.header-text {
-    text-align: center;
+.bell {
+    padding-top: 35px;
 }
 
-.click {
-    color: #686d76;
+.bell img {
+    padding-left: 20px;
 }
 
-.header-text {
-    background: linear-gradient(to right, #e6f0ff, #ffe6e6);
-    height: 45px;
-    position: relative;
-    margin-top: 0px;
-    font-family: Inter, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bell div {
+    display: inline;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.bell div:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Location1 a {
+    color: #24A3B5;
+    text-decoration: none;
 }
 
 span {
-    font-size: x-large;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+
+.Location1 a:hover {
+    text-decoration: underline #24a3b5;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    padding-left: 1150px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+#head2 {
+    display: flex;
+    justify-content: center;
+}
+
+#head2 img {
+    margin-right: 10px;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.list li {
+    color: white;
+}
+
+.nav-list .list li:hover {
+    background-color: whitesmoke;
+    color: #24A3B5;
+    cursor: pointer;
 }
