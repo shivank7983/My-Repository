@@ -1,189 +1,331 @@
 # My-Repository
-This is my first Repository
+This is my first Repository Based on Amazon
 <br>
 Author - Shivank Singh
-"Hello"
 **HTML Code:**
- <div class="menu">
-        <a href="#" class="menu-item">Sell With Us</a>
-        <span class="separator">|</span>
-        <a href="#" class="menu-item">Contact Us</a>
-    </div>
-    <div id="head">
-      <div class="logo">
-        <a href="#"><img src="Shopclues_logo.png" width="130" height="60" alt="Logo"></a>
-      </div>
-      <div class="searchbar">
-        <input type="text" placeholder="What is on your Mind today?">
-        <button class="btn1">Search</button>
-      </div>
-      <div class="Location1">
-        <span>Share</span><a style="display: block" href="#">Location</a>
-      </div>
-      <div class="bell">
-        <a href="#"><img src="Location_icon.png" alt="Location"></a>
-        <a href="#"><img src="Bell_Icon.png" alt="Bell"></a>
-        <a href="#"><img src="Favourties_icon.png" alt="Favourties"></a>
-        <a href="#"><img src="Cart_icon.png" alt="cart"></a>
-        <div>Sign In</div>
-      </div>
-    </div>
-        <div id="head2">
-          <img src="Blue_Icon.png" alt="Made in India">
-          <div class="nav-list">
-            <ul class="list">
-              <li>Mobile & More</li>
-              <li>Men</li>
-              <li>Women</li>
-              <li>Home & Kitchen</li>
-              <li>Appliances</li>
-              <li>Sports & More</li>
-              <li>Essentials</li>
-              <li>Offers</li>
-              <li>Global Shopping</li>
-            </ul>
-          </div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-    **CSS Code**
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="amazonstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Delivering to Lucknow 226012</p>
+                <div class="add-icon">
+                    <p class="add-sec">Update location</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-select border">
+                <img src="flag.png" alt="flag">
+                <p>EN</p>
+                <i class="fa-duotone fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nav-link border">
+                <p class="link-first">Hello, sign in</p>
+                <div class="link-icon">
+                    <p class="link-sec">Account & Lists</p>
+                    <i class="fa-sharp-duotone fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="nav-text border">
+                <p class="text-first">Return</p>
+                <div class="text">
+                    <p class="text-sec">& Orders</p>
+                </div>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p class="border">Fresh</p>
+                <p class="border">Amazon miniTV</p>
+                <p class="border">Sell</p>
+                <p class="border">Best Deals</p>
+                <p class="border">Today's Deals</p>
+                <p class="border">Mobile</p>
+                <p class="border">Prime</p>
+                <p class="border">Customer service</p>
+                <p class="border">Electronics</p>
+                <p class="border">Fashion</p>
+                <p class="border">New Releases</p>
+                <p class="border">Kitchen & Homes</p>
+                <p class="border">Amazon Pay</p>
+                <p class="border">Computers</p>
+                <p class="border">Books</p>
+            </div>
+            <div class="panel-deals border">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>You are on amazon.com. You can also shop on Amazon india for millions of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+**CSS Code**
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: border-box;
 }
 
-#head {
-    height: 90px;
-    display: flex;
-    }
+.navbar {
+    height: 65px;
+    background-color: black;
+    color: white;
+    display: flex;   
+    align-items: center;
+}
 
-#head2 {
+.nav-logo {
     height: 50px;
-    background-color: #24A3B5;
+    /* width: 110px; */
+    padding-top: 6px;
+    /* padding-left: 70px; */
+    margin-left: 60px;
 }
 
 .logo {
-    padding-top: 22px;
-    padding-left: 40px;
+    background-image: url("Amazon_icon.JPG");
+    background-size: cover;
+    height: 50px;
+    width: 110px;
 }
 
-.searchbar {
-    margin: 0 20px;
-    padding-top: 35px;
-    padding-left: 80px;
+.border {
+    border: 2px solid transparent;
 }
 
-input {
-    width: 400px;
-    padding: 12px 65px;
-    border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
-    flex: 1;
-    background-color: #e8f3f8;
+.border:hover {
+    border: 2px solid white;
 }
 
-input[type="text"]::placeholder {
-    font-size: 18px;
+.nav-address {
+    margin-left: 35px;
+    padding: 3px 6px;
 }
 
-input:focus {
-    background-color: white;
-    box-shadow: 0 4px 8px black
+.add-first {
+    color: #cccccc;
+    font-size: 0.80rem;
+    margin-left: 20px;
 }
 
-.btn1 {
-    padding: 13px 30px;
-    background-color: #FF8E4D;
-    border: none;
-    border-radius: 2px;
-    color: white;
+.add-sec {
+    font-size: 1rem;
+    margin-left: 20px;
     font-weight: bold;
 }
 
-.btn1:hover {
-    background-color: #FF8E4D;
-    cursor: pointer;
-}
-/* 
-p {
-    display: inline;
-    padding-left: 20px;
-} */
-
-.Location1 {
-    padding-left: 50px;
-    padding-top: 35px;
+/** Box 3 **/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+     width: 800px;
+     height: 40px;
+     border-radius: 4px;
+     padding-left: 70px;
 }
 
-.bell {
-    padding-top: 35px;
-}
-
-.bell img {
-    padding-left: 20px;
-}
-
-.bell div {
-    display: inline;
-    position: absolute;
-    padding-top: 10px;
-    padding-left: 20px;
-}
-
-.bell div:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.Location1 a {
-    color: #24A3B5;
-    text-decoration: none;
-}
-
-span {
-    color: #000000;
-}
-
-.Location1 a:hover {
-    text-decoration: underline #24a3b5;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
-}
-
-.menu {
-    padding-left: 1150px;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-
-#head2 {
+.search-icon {
+    background-color: rgb(255, 180, 0);
+    width: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #0f1111;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
-#head2 img {
-    margin-right: 10px;
+.search-select {
+    background-color: #f3f3f3;
+    padding: 0px 0px 0px 5px;
+    font: 14px;
+    color: #0f1111;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
 }
 
-.list {
-    list-style-type: none;
+.search-input {
+    width: 800px;
+    font-size: 1rem;
+    border: none;
+}
+
+/** Box4 **/
+.nav-select img {
+    width: 18px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.nav-select {
     display: flex;
-    gap: 15px;
-    padding: 0px;
-    margin-top: 15px;
+    margin-left: 50px;
+    padding: 10px 15px;
 }
 
-.list li {
+.nav-select i {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+/** Box5 **/
+.nav-link {
+    margin-top: 3px;
+    margin-left: 40px;
+    padding: 5px 10px;
+}
+
+.link-icon {
+    display: flex;
+}
+
+.link-icon i {
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.link-first {
+    font-size: 0.80rem;
+}
+
+.link-sec {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/** box6 **/
+.nav-text {
+    padding: 5px 10px;
+    margin-left: 40px;
+}
+
+.text-first {
+    font-size: 0.80rem;
+}
+
+.text-sec {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/** box7 **/
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 5px 10px;
+    margin-left: 40px;
+}
+
+/** panel css **/
+.panel {
+    height: 45px;
+    background-color: #222F3d;
+    display: flex;
     color: white;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.nav-list .list li:hover {
-    background-color: whitesmoke;
-    color: #24A3B5;
-    cursor: pointer;
+.panel-ops {
+    width: 80%;
+    margin-right: 100px;
+}
+
+.panel-all i {
+    color: white;
+    margin-left: 4px;
+    font-size: 1.25rem;
+    margin: 7px 4px;
+}
+
+.panel-deals {
+    background-image: url("Capture.JPG");
+    background-size: cover;
+    height: 40px;
+    width: 205px;
+    margin-top: -3px;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+    font-size: 0.85rem;
+    padding: 8px 8px;
+}
+
+/** Hero Section */
+.hero-section {
+    background-image: url("smartwatch.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg {
+    background: linear-gradient(to right, orange, whitesmoke, green);
+    height: 40px;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.hero-msg a {
+    color: white;
 }
