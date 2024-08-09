@@ -1,0 +1,82 @@
+UL {
+  list-style: none;
+}
+
+LI {
+  float: left;
+  width: 10%;
+  border: 2PX solid black;
+  padding: 10px;
+  margin-left: 200px;
+  text-align: center;
+  font-weight: bold;
+  background-color: aqua;
+  font-size: 20px;
+}
+
+li:hover {
+  background-color: green;
+}
+
+/* CSS 3D ANIMATION  */
+#slide {
+  width: 200px;
+  height: 100px;
+  background-color: lightcoral;
+  animation: slide 10s ease-in-out;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  margin-left: 20px;
+  /* width: 150px;
+  height: 150PX;
+  background-color: orangered;
+  position: relative;
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: 5;
+  animation-direction: alternate; */
+  /* animation-timing-function: ease-in-out; */
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translatex(0);
+  }
+}
+
+/* 0% {background-color: orangered; left: 0px; top: 0px;}
+  25% {background-color: yellow; left: 200px; top: 0px;}
+  50% {background-color: aqua; left: 200px; top: 200px;}
+  75% {background-color: green; left: 0px; top: 200px;}
+  100% {background-color: black; left: 0px; top: 0px;}
+} */
+
+/* CSS 2D TRANSFORMATION */
+div {
+  width: 300px;
+  height: 100px;
+  background-color: pink;
+  border: 1px solid black;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 900px;
+}
+ 
+#Box2 {
+  transform: rotate(20deg);
+}
+
+#Box2 {
+  transform: skewY(20deg);
+}
+
+
+
